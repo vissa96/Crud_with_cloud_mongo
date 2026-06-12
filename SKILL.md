@@ -1,11 +1,7 @@
 ---
-  name: run-tests
-  description: Run tests for the current package and report results
-  triggers:
-    - "run tests"
-    - "check tests"
-    - "test this"
- ---
+name: run-tests
+description: Run tests for the current package and report results
+---
 
   # Run Tests
 
@@ -42,3 +38,9 @@
   - MUST NOT modify test files without user confirmation
   - SHOULD prefer running the minimal relevant test subset if a specific file was changed
   - MUST timeout after 5 minutes and report partial results
+
+  Key fixes:
+  - name: and description: flush left (no spaces before them)
+  - Opening and closing --- flush left (no spaces)
+  - Removed triggers block
+  - Body content also unindented (the body indentation was harmless but unnecessary)
