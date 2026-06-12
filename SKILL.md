@@ -1,11 +1,11 @@
- ---
+---
   name: run-tests
   description: Run tests for the current package and report results
   triggers:
     - "run tests"
     - "check tests"
     - "test this"
-  ---
+ ---
 
   # Run Tests
 
